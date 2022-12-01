@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/servingsAmount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:textAlignment="center"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/food_item_image"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/food_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="44dp"
+            android:layout_toEndOf="@+id/food_item_image"
+            android:gravity="center_vertical"
+            android:text="@string/the_name_of_the_food"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="$"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/food_item_image"
+            android:layout_below="@id/food_item_name"
+            android:layout_marginStart="40dp"
+            />
+
+        <TextView
+            android:id="@+id/food_item_price"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/food_item_name"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/food_item_image"
+            android:text="150.00"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Add_Btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/count"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/food_item_image"
+            android:backgroundTint="#00BCD4"
+            android:text="@string/add" />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="51dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/food_item_price"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/food_item_image"
+            app:srcCompat="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="46dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/food_item_price"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/food_item_image"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textColor="#191717" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="52dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/food_item_price"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/food_item_image"
+            app:srcCompat="@drawable/plus" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

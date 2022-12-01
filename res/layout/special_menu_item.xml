@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/servingsAmount"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:elevation="4dp"
+android:textAlignment="center"
+app:cardCornerRadius="5dp"
+app:cardUseCompatPadding="true">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/special_item_image"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/special_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="44dp"
+        android:layout_toEndOf="@+id/special_item_image"
+        android:gravity="center_vertical"
+        android:text="Special Sea Food Rice"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/special_item_price"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/special_item_name"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@id/special_item_image"
+        android:text="15.00"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue2"/>
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="$"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue2"
+        android:layout_toEndOf="@id/special_item_image"
+        android:layout_below="@id/special_item_name"
+        android:layout_marginStart="40dp"
+        />
+
+    <TextView
+        android:id="@+id/sitem_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/special_item_price"
+        android:layout_toEndOf="@id/special_item_image"
+        android:layout_marginStart="56dp"
+        android:text="From Chinese Dragon"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue2"/>
+
+    <TextView
+        android:id="@+id/special_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sitem_restaurant_name"
+        android:layout_toEndOf="@id/special_item_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="56dp"
+        android:text="Including Prawns, Cuttle Fish, Crabs, Fish, Oysters, Clams..."
+        android:textAlignment="textStart"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/teal_700"/>
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

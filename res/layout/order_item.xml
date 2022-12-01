@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:textAlignment="center"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/time_of_order"
+            android:layout_width="250dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:text ="05-11-2022 15:11:15"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/time_of_order"
+            android:text ="Seafood Burger"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_header"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/order_item_name"
+            android:text ="Price Per Item: $"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_per_serving"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/order_item_name"
+            android:text ="14.00"
+            android:layout_alignStart="@id/price_header"
+            android:layout_marginStart="120dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantity_header"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/price_header"
+            android:text ="Quantity Ordered: "
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantity_ordered"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/price_per_serving"
+            android:text ="5"
+            android:layout_alignStart="@id/price_header"
+            android:layout_marginStart="135dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurant_name_header"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/quantity_header"
+            android:text ="From: "
+            android:layout_alignParentStart="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurant_ordered"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/quantity_ordered"
+            android:text ="Street Burger"
+            android:layout_alignStart="@id/price_header"
+            android:layout_marginStart="50dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

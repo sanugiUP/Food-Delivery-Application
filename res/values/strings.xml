@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MAD_Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="the_name_of_the_food">The name of the food</string>
+    <string name="_7514_glenridge_street_plymouth_ma_02360">7514 Glenridge Street Plymouth, MA 02360</string>
+    <string name="price">Price</string>
+    <string name="pick_your_favourite">Pick Your Favourite!</string>
+    <string name="every_flavor_for_you">Every Flavor For You!</string>
+    <string name="restaurantname">RestaurantName</string>
+    <string name="_0">0</string>
+    <string name="add">Add</string>
+    <string name="Cart">Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick_your_favourite_restaurant">Pick Your Favourite Restaurant!</string>
+    <string name="today_s_special">Today\'s Special!</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurant_item_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurant_item_fragment"
+        tools:listitem="@layout/restaurant_item" />
+
+    <FrameLayout
+        android:id="@+id/restaurant_item_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TotalItems"
+                android:layout_width="27dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="?android:attr/colorPressedHighlight"
+                app:layout_constraintStart_toEndOf="@id/restaurant_menu_title"
+                app:layout_constraintEnd_toEndOf="@+id/cart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="77dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/restaurant_menu_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shop" />
+
+            <TextView
+                android:id="@+id/restaurant_menu_title"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/pick_your_favourite"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
